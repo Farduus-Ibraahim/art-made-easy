@@ -9,7 +9,7 @@
 /* ---------- CSS Custom Properties (variables) ---------- */
 :root {
   /* Colors */
-  --color-bg:        #FAF8F4;   /* warm off-white background */
+  --color-bg:        #faf4f7;   /* warm off-white background */
   --color-surface:   #FFFFFF;   /* card / section surfaces   */
   --color-border:    #E8E2D9;   /* subtle border tone        */
   --color-text:      #1C1917;   /* near-black body text      */

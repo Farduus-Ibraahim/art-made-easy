@@ -1,5 +1,5 @@
 /* =============================================
-   Art Made Easy — script.js
+   Art Made Easy, script.js
    Vanilla JavaScript, no frameworks
    ============================================= */
 

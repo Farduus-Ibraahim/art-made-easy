@@ -1,5 +1,5 @@
 /* =============================================
-   Art Made Easy — style.css
+   Art Made Easy, style.css
    Aesthetic: dark art gallery / museum world
    No emojis, no rounded cards, no AI template clichés
    ============================================= */
@@ -158,7 +158,7 @@ strong { font-weight: 500; color: var(--white); }
 }
 
 /* ============================================
-   HERO — Homepage
+   HERO, Homepage
    Full-bleed dark image with text at bottom
    ============================================ */
 .hero {
@@ -278,7 +278,7 @@ strong { font-weight: 500; color: var(--white); }
 .eyebrow--dim  { color: var(--white-faint); }
 
 /* ============================================
-   MISSION STRIP — Homepage
+   MISSION STRIP: Homepage
    ============================================ */
 .about-strip {
   border-top: 1px solid var(--rule);
@@ -327,7 +327,7 @@ strong { font-weight: 500; color: var(--white); }
 .mission-list__text p { font-size: 0.9rem; margin: 0; }
 
 /* ============================================
-   MOVEMENTS GRID — Homepage
+   MOVEMENTS GRID, Homepage
    ============================================ */
 .movements-section { padding: 5rem 0; }
 
@@ -394,7 +394,7 @@ strong { font-weight: 500; color: var(--white); }
 }
 
 /* ============================================
-   HOW IT WORKS — Homepage
+   HOW IT WORKS: Homepage
    ============================================ */
 .steps-section {
   border-top: 1px solid var(--rule);
@@ -434,7 +434,7 @@ strong { font-weight: 500; color: var(--white); }
 .step-cell p { font-size: 0.88rem; max-width: none; margin: 0; }
 
 /* ============================================
-   PAGE HERO — Inner pages
+   PAGE HERO: Inner pages
    ============================================ */
 .page-hero {
   position: relative;
@@ -474,7 +474,7 @@ strong { font-weight: 500; color: var(--white); }
 }
 
 /* ============================================
-   CONTENT ROWS — Inner pages
+   CONTENT ROWS: Inner pages
    Sticky left label + right body text
    ============================================ */
 .content-row {
@@ -513,7 +513,7 @@ strong { font-weight: 500; color: var(--white); }
 }
 
 /* ============================================
-   FEATURES TABLE — Key characteristics
+   FEATURES TABLE: Key characteristics
    ============================================ */
 .features-table { width: 100%; border-collapse: collapse; }
 .features-table tr { border-bottom: 1px solid var(--rule); }

@@ -3,28 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn about Impressionism in simple, clear language. Discover loose brushstrokes, light, and everyday scenes through artists like Monet, Degas, and Renoir." />
-
-  <title>Impressionism – Art Made Easy</title>
-
+  <meta name="description" content="Learn about Impressionism in clear, simple language. Discover how Monet, Degas, and Renoir changed painting by chasing light and everyday life." />
+  <title>Impressionism — Art Made Easy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Skip link for accessibility -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- =============================================
-       SITE NAVIGATION
-  ============================================= -->
+  <!-- Navigation -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="container site-nav__inner">
-      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy – Home">
-        Art Made Easy
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
-        ☰
-      </button>
+      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy — Home">Art Made Easy</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">&#9776;</button>
       <ul class="site-nav__links" id="nav-links" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="baroque.html">Baroque</a></li>
@@ -33,368 +24,318 @@
     </div>
   </nav>
 
-
-  <!-- =============================================
-       MAIN CONTENT
-  ============================================= -->
   <main id="main-content">
 
-    <!-- ---- PAGE HERO ---- -->
-    <section class="page-hero page-hero--impress" aria-labelledby="page-title">
-      <div class="container">
-        <span class="page-hero__tag">Lesson 2 of 2</span>
-        <h1 id="page-title">Impressionism</h1>
-        <p class="page-hero__desc">
-          Light. Color. Feeling. Impressionism revolutionized art by painting the world
-          not as it is, but as it feels in a fleeting moment of sunlight.
-        </p>
+    <!-- =============================================
+         PAGE HERO
+    ============================================= -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg" aria-hidden="true">
+        <!-- Optional: <img src="impressionism-hero.jpg" alt="" /> -->
+      </div>
+      <div class="page-hero__overlay" aria-hidden="true"></div>
+      <div class="page-hero__content">
+        <div class="container">
+          <span class="eyebrow">Lesson 2 of 2</span>
+          <h1 id="page-title">Impressionism</h1>
+          <p class="page-hero__sub">
+            Loose brushstrokes, shifting light, and ordinary life as subject matter.
+            The Impressionists changed what painting was allowed to be.
+          </p>
+        </div>
       </div>
     </section>
 
+    <!-- =============================================
+         CONTENT SECTIONS
+    ============================================= -->
+    <div class="container">
 
-    <!-- ---- WHAT IS IMPRESSIONISM ---- -->
-    <section class="section" aria-labelledby="what-is-impressionism">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">The Basics</span>
-          <h2 id="what-is-impressionism">What is Impressionism?</h2>
+      <!-- What is Impressionism -->
+      <div class="content-row" aria-labelledby="what-impressionism">
+        <div class="content-row__label">
+          <h2 id="what-impressionism">What is Impressionism?</h2>
         </div>
-
-        <div class="info-block">
+        <div class="content-body">
           <p>
             <strong>Impressionism</strong> was an art movement that began in France in the
-            <strong>1860s and 1870s</strong>. It was a radical break from everything
-            that came before it.
+            <strong>1860s</strong>. It was, in many ways, a rebellion against everything that
+            official art institutions considered correct.
           </p>
           <p>
-            Before Impressionism, painting was all about precision, perfectly blended colors,
-            photographic detail, and grand historical or mythological scenes. Impressionist
-            artists threw those rules out. Instead, they went <em>outside</em>, set up
-            their easels in gardens and parks and riversides, and tried to capture
-            <strong>exactly what their eyes saw in that exact moment</strong>, including
-            how light shimmered, flickered, and changed.
+            Before Impressionism, the standard for great painting meant smooth, invisible
+            brushstrokes, careful detail, and subjects drawn from history or mythology.
+            Impressionist painters rejected all of that. They went outside, set up their
+            easels in real places — parks, riversides, busy streets — and tried to capture
+            not the scene itself, but the way light fell on it at a specific moment in time.
           </p>
           <p>
-            The name "Impressionism" was actually meant as an insult. A critic mocked
-            Claude Monet's painting <em>Impression, Sunrise</em> by calling it just
-            an "impression", not a finished work of art. The artists embraced the name
-            proudly. Today it's one of the most beloved art styles in the world.
+            The name "Impressionism" started as an insult. A critic mocked Claude Monet's
+            painting <em>Impression, Sunrise</em> in 1874, saying it looked like an unfinished
+            sketch — just an "impression." The artists took the label anyway and made it their
+            own. Today it is one of the most beloved styles in the history of art.
           </p>
         </div>
-
       </div>
-    </section>
 
-
-    <!-- ---- KEY IDEAS ---- -->
-    <section class="section section--alt" aria-labelledby="key-ideas">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Key Ideas</span>
-          <h2 id="key-ideas">What Makes Impressionism Unique?</h2>
-          <p>Three core ideas define Impressionist paintings.</p>
+      <!-- Key Ideas -->
+      <div class="content-row" aria-labelledby="key-ideas">
+        <div class="content-row__label">
+          <h2 id="key-ideas">What Makes It Different?</h2>
         </div>
-
-        <ul class="features-list" role="list" aria-label="Key ideas of Impressionism">
-
-          <!-- Idea 1: Light -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Capturing Light and the Moment</strong>
-              <span>
-                Impressionists were obsessed with <strong>light</strong>, how it changes
-                from morning to afternoon, how it reflects off water, how it filters through
-                leaves. A subject could look completely different depending on the time of day.
-                Monet famously painted the same haystacks dozens of times, at dawn, midday,
-                and dusk, to show how radically light transforms what we see.
-                The goal was never to paint a timeless truth, but a specific, unrepeatable moment.
-              </span>
-            </div>
-          </li>
-
-          <!-- Idea 2: Brushstrokes -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Loose, Visible Brushstrokes</strong>
-              <span>
-                Earlier painters blended their paint so smoothly you couldn't see a single
-                brushstroke. Impressionists did the opposite, they left their brushstrokes
-                visible, short, and quick. Up close, the paint looks messy and abstract.
-                Step back, and it resolves into a shimmering, lifelike scene. This technique
-                was shocking and controversial at the time. It's now considered a breakthrough.
-              </span>
-            </div>
-          </li>
-
-          <!-- Idea 3: Everyday Life -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Everyday Life as Subject Matter</strong>
-              <span>
-                Impressionists didn't paint ancient myths or religious miracles. They painted
-                <em>real life</em>, friends at a café, ballet dancers warming up backstage,
-                families picnicking by a river, women reading in gardens. This was radical.
-                It said: <em>the everyday is worth painting.</em> Ordinary moments have beauty
-                and deserve to be remembered. That's a deeply democratic and inclusive idea.
-              </span>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>
-
-
-    <!-- ---- NOTABLE ARTISTS ---- -->
-    <section class="section" aria-labelledby="artists-heading">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Notable Artists</span>
-          <h2 id="artists-heading">The Impressionists</h2>
-          <p>
-            A group of friends and rebels who changed art history together.
+        <div class="content-body">
+          <p style="margin-bottom: 0.5rem; color: var(--white-faint);">
+            Three ideas that set Impressionism apart from everything that came before it.
           </p>
+          <table class="features-table" aria-label="Key ideas of Impressionism">
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>
+                  <strong>Light as the Subject</strong>
+                  <span>
+                    Impressionists were not painting objects — they were painting light.
+                    The same pond, the same haystack, the same cathedral could look completely
+                    different depending on the time of day, the weather, and the season.
+                    Monet famously painted the same haystacks dozens of times to show exactly
+                    this. The real subject was always light itself, and how it constantly
+                    transforms the world around us.
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>
+                  <strong>Loose, Visible Brushstrokes</strong>
+                  <span>
+                    Earlier painters blended their colors so smoothly that no individual
+                    brushstroke was visible. Impressionists did the opposite — they worked
+                    quickly and left their marks on the canvas deliberately. Up close, a Monet
+                    painting can look like a chaos of dabs and smears. Step back, and it
+                    resolves into shimmering water or a sunlit garden. This technique was
+                    considered sloppy and unfinished at the time. It is now considered a
+                    breakthrough.
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>
+                  <strong>Ordinary Life as Subject Matter</strong>
+                  <span>
+                    Impressionists didn't paint gods, saints, or historical battles. They
+                    painted what they saw around them: people having lunch at a restaurant,
+                    ballet dancers stretching before rehearsal, children playing in a park,
+                    a woman reading by a window. This was a radical shift. It said that
+                    ordinary life — the life most people were actually living — was worth
+                    preserving in paint.
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <!-- Three artist cards -->
-        <div class="cards-grid">
+    </div>
+    <!-- end .container -->
 
-          <!-- Monet -->
-          <article class="info-block" aria-label="About Claude Monet">
-            <h3>Claude Monet <span style="font-size:1rem; font-family: var(--font-body);">(1840–1926)</span></h3>
-            <p style="color: var(--color-muted); margin-bottom: 0.5rem;">The light-chaser</p>
+    <!-- =============================================
+         ARTISTS SECTION
+    ============================================= -->
+    <section class="section" style="border-top: 1px solid var(--rule);" aria-labelledby="artists-heading">
+      <div class="container">
+        <span class="eyebrow">The Artists</span>
+        <h2 id="artists-heading">Three Painters to Know</h2>
+
+        <div class="artist-grid" role="list">
+
+          <article class="artist-card" role="listitem" aria-label="About Claude Monet">
+            <p class="artist-card__name">Claude Monet</p>
+            <span class="artist-card__dates">1840 &ndash; 1926</span>
             <p>
-              Monet is the most recognizable name in Impressionism. He was endlessly fascinated
-              by how light transformed nature. His famous <em>Water Lilies</em> series, painted
-              in his own garden in Giverny, shows a pond at different times of day and seasons.
-              Remarkably, he continued painting even as he went nearly blind in his later years.
+              The most recognizable name in Impressionism. Monet spent his life studying how
+              natural light transforms a scene. His <em>Water Lilies</em> series, painted in
+              the garden he designed at Giverny, shows the same pond across different hours and
+              seasons. He continued painting even as his eyesight deteriorated significantly in
+              his later years.
             </p>
           </article>
 
-          <!-- Degas -->
-          <article class="info-block" aria-label="About Edgar Degas">
-            <h3>Edgar Degas <span style="font-size:1rem; font-family: var(--font-body);">(1834–1917)</span></h3>
-            <p style="color: var(--color-muted); margin-bottom: 0.5rem;">The movement-capturer</p>
+          <article class="artist-card" role="listitem" aria-label="About Edgar Degas">
+            <p class="artist-card__name">Edgar Degas</p>
+            <span class="artist-card__dates">1834 &ndash; 1917</span>
             <p>
-              Degas was fascinated with <strong>movement and the human body</strong>. He is best
-              known for his paintings and sculptures of ballet dancers, not on stage in the spotlight,
-              but rehearsing, stretching, and resting backstage. He captured private, in-between
-              moments that felt genuine and unposed, almost like a photograph.
+              Degas was drawn to movement and the human body in motion. He is best known for
+              his paintings and sculptures of ballet dancers — not performing on stage, but
+              practicing, resting, and adjusting their shoes in the wings. He had a way of
+              catching people in unguarded, in-between moments that made his work feel almost
+              like photography before photography could do it.
             </p>
           </article>
 
-          <!-- Renoir -->
-          <article class="info-block" aria-label="About Pierre-Auguste Renoir">
-            <h3>Pierre-Auguste Renoir <span style="font-size:1rem; font-family: var(--font-body);">(1841–1919)</span></h3>
-            <p style="color: var(--color-muted); margin-bottom: 0.5rem;">The celebrator of joy</p>
+          <article class="artist-card" role="listitem" aria-label="About Pierre-Auguste Renoir">
+            <p class="artist-card__name">Pierre-Auguste Renoir</p>
+            <span class="artist-card__dates">1841 &ndash; 1919</span>
             <p>
-              If Monet painted light and Degas painted movement, Renoir painted <strong>joy</strong>.
-              His canvases are full of warm color, laughter, dances, and social gatherings. He
-              believed art should be pleasurable and uplifting. His painting <em>Luncheon of the
-              Boating Party</em> is a perfect example, friends eating, drinking, and laughing
-              in dappled sunlight.
+              If Monet painted light and Degas painted movement, Renoir painted warmth.
+              His paintings are full of social gatherings, laughter, outdoor meals, and people
+              clearly enjoying themselves. He believed art should give pleasure. His
+              <em>Luncheon of the Boating Party</em> captures friends in dappled afternoon
+              sunlight in a way that still feels alive and immediate.
             </p>
           </article>
 
         </div>
-
-        <!-- Artist name chips (visual summary) -->
-        <div style="margin-top: 1.5rem;">
-          <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 0.75rem;">Key artists at a glance:</p>
-          <div class="artist-chips" aria-label="Impressionist artists">
-            <span class="chip" aria-label="Claude Monet"> Claude Monet</span>
-            <span class="chip" aria-label="Edgar Degas"> Edgar Degas</span>
-            <span class="chip" aria-label="Pierre-Auguste Renoir"> Pierre-Auguste Renoir</span>
-          </div>
-        </div>
-
       </div>
     </section>
 
-
-    <!-- ---- FEATURED ARTWORK ---- -->
-    <section class="section section--alt" aria-labelledby="artwork-heading">
+    <!-- =============================================
+         ARTWORK SECTION
+    ============================================= -->
+    <section class="section" style="border-top: 1px solid var(--rule);" aria-labelledby="artwork-heading">
       <div class="container">
 
-        <div class="section-header">
-          <span class="section-header__tag">Featured Artwork</span>
-          <h2 id="artwork-heading">A Closer Look</h2>
-          <p>Let's examine one of Monet's most emotionally resonant later works.</p>
-        </div>
+        <span class="eyebrow">Featured Artwork</span>
+        <h2 id="artwork-heading" style="margin-bottom: 1.75rem;">A Closer Look</h2>
 
-        <!-- Artwork spotlight -->
-        <div class="artwork-spotlight" role="figure" aria-labelledby="artwork-title">
+        <div class="artwork-block" role="figure" aria-labelledby="artwork-title">
 
-          <!-- Image side -->
-          <div class="artwork-spotlight__img-wrap">
+          <!-- Image slot -->
+          <div class="artwork-block__img">
             <!--
-              NOTE FOR STUDENTS:
-              To display the actual painting, download a public-domain image of
-              Monet's "Weeping Willow" (Saule pleureur) from Wikimedia Commons,
-              save it as "weeping-willow.jpg" in the same folder, and
-              update the src attribute below.
+              TO ADD YOUR MUSEUM PHOTO:
+              1. Save your photo as  weeping-willow.jpg  in this folder
+              2. Delete the entire .img-placeholder block below
+              3. Uncomment the <img> tag
 
-              Public domain source:
-              https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Weeping_Willow_-_1919.jpg
-            -->
-            <div class="artwork-placeholder" role="img" aria-label="Placeholder for Weeping Willow by Claude Monet. The painting shows a large willow tree with long, drooping branches painted in loose, expressive brushstrokes in greens, blues, and yellows.">
-              <span class="artwork-placeholder__icon" aria-hidden="true">🌿</span>
-              <p><strong>"Weeping Willow"</strong></p>
-              <p class="artwork-placeholder__caption">
-                Claude Monet, 1919<br>
-                <em>Download and place image here as weeping-willow.jpg</em><br>
-                (Free from Wikimedia Commons)
-              </p>
-            </div>
-
-            <!--
-              UNCOMMENT THIS IMG TAG when you have the image file saved locally:
               <img
                 src="weeping-willow.jpg"
-                alt="Weeping Willow by Claude Monet, 1919: a large willow tree dominates the canvas,
-                its long arching branches sweeping downward in loose, expressive brushstrokes of
-                green, gold, and blue. The background is a blend of cool blues and greens.
-                The painting feels turbulent yet beautiful, the drooping branches give the
-                tree an almost human, sorrowful posture."
-                width="600"
-                height="480"
+                alt="Weeping Willow by Claude Monet, photographed at the Modern Art
+                     Museum of Fort Worth. Long drooping branches sweep downward across
+                     the canvas in loose, expressive brushstrokes of green and blue.
+                     The painting has a heavy, sorrowful quality — there is no sunlight,
+                     only the weight of the hanging branches."
+                width="700"
+                height="560"
               />
             -->
+            <div class="img-placeholder" role="img" aria-label="Photo placeholder — Weeping Willow by Monet. Add your museum photo here.">
+              <div class="img-placeholder__frame" aria-hidden="true">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="3" y="3" width="26" height="26" stroke-width="1.5"/>
+                  <circle cx="11" cy="12" r="3" stroke-width="1.5"/>
+                  <polyline points="3,24 10,17 15,22 20,16 29,24" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <strong>Add your museum photo here</strong>
+              <p>Save as weeping-willow.jpg and update the img src above</p>
+            </div>
           </div>
 
-          <!-- Info side -->
-          <div class="artwork-spotlight__info">
-            <p class="artwork-spotlight__tag">Impressionist Masterpiece</p>
-            <h3 class="artwork-spotlight__title" id="artwork-title">
-              "Weeping Willow"
-            </h3>
-            <p class="artwork-spotlight__meta">
-              Claude Monet &nbsp;·&nbsp; 1919 &nbsp;·&nbsp; Oil on Canvas
+          <!-- Info -->
+          <div class="artwork-block__info">
+            <p class="artwork-block__label">Impressionism &mdash; Featured Work</p>
+            <p class="artwork-block__title" id="artwork-title">Weeping Willow</p>
+            <p class="artwork-block__meta">
+              Claude Monet &nbsp;&middot;&nbsp; 1919<br>
+              Oil on Canvas<br>
+              Photographed at the Modern Art Museum of Fort Worth
             </p>
+            <div class="artwork-block__body">
+              <p>
+                Monet painted this willow tree in 1919, during one of the darkest periods
+                France had known. World War I had ended the year before, leaving the country
+                devastated. Monet, who had a son who served in the war, was grieving along
+                with the rest of the nation.
+              </p>
+              <p>
+                The weeping willow has long been used as a symbol of mourning. Monet chose
+                it deliberately. Look at how the <strong>long branches sweep downward</strong>
+                — they almost look like a figure bent in sadness. The brushstrokes are
+                turbulent and expressive, very different from his earlier, sunlit water
+                lily paintings.
+              </p>
+              <p>
+                There are no people in this painting, no narrative, no action — just a tree.
+                And yet it communicates grief more directly than most explicitly sad paintings.
+                That is what Impressionism at its best could do: translate a feeling into
+                color and texture without ever stating it outright.
+              </p>
 
-            <p>
-              Monet painted this willow tree during one of the <strong>most painful periods
-              in French history</strong>, World War I. The war devastated France, and
-              Monet, who had a beloved son serving in the military, felt the grief deeply.
-            </p>
-
-            <p>
-              The weeping willow, already a traditional symbol of mourning and grief,
-              was Monet's way of processing sorrow. The <strong>drooping, sweeping branches</strong>
-              almost look like a figure bent in sadness. The brushstrokes are turbulent and
-              expressive, more emotionally raw than his earlier, sunlit garden paintings.
-            </p>
-
-            <p>
-              Even without any human figures, this painting <em>feels</em> like grief.
-              That's the power of Impressionism, communicating emotion through color,
-              texture, and light, not through literal representation.
-            </p>
-
-            <!-- Interactive Q&A box -->
-            <div class="qa-box" aria-label="Interactive questions about the Weeping Willow painting" style="margin-top: 1.5rem;">
-
-              <div class="qa-box__header">
-                <h3> Explore This Artwork</h3>
-                <p>Click a question to get a simple answer</p>
-              </div>
-
-              <div class="qa-box__questions" role="group" aria-label="Question buttons">
-
-                <button
-                  class="qa-btn"
-                  data-answer="This painting expresses grief and mourning. Monet painted it during World War I when France was suffering greatly, and he was worried about his son who was serving in the war. The weeping willow has long been a symbol of sadness and loss. Monet used the tree as a way to express emotions that words couldn't capture, this is one of art's greatest powers."
-                  aria-label="Question: What does the Weeping Willow artwork mean?"
-                >
-                  What does this mean?
-                </button>
-
-                <button
-                  class="qa-btn"
-                  data-answer="This painting is important because it shows how Impressionism could express deep human emotion, not just beautiful, sunny scenes. It proves that art can be a form of emotional processing, similar to writing in a journal or talking to a therapist. It also shows Monet at his most vulnerable and expressive, late in life, painting through pain."
-                  aria-label="Question: Why is the Weeping Willow important?"
-                >
-                  Why does it matter?
-                </button>
-
-                <button
-                  class="qa-btn"
-                  data-answer="Look at the brushstrokes, they are long, loose, and sweeping, almost frantic. Notice how the branches hang downward like someone slumped in sadness. Look at the colors, there is no bright, cheerful sunlight here. The greens and blues are cool and muted. Notice that there are no people in the painting, just the tree, yet it still feels deeply human. Monet gave the tree a human emotion."
-                  aria-label="Question: What should I notice in the Weeping Willow?"
-                >
-                  What should I notice?
-                </button>
-
-              </div>
-
-              <!-- Answer display area -->
-              <div class="qa-box__answer" aria-live="polite" aria-atomic="true">
-                <span class="qa-box__answer-icon" aria-hidden="true"></span>
-                <p class="qa-box__answer-text qa-box__placeholder">
-                  Select a question above to see the answer here.
-                </p>
+              <!-- Q&A box -->
+              <div class="qa-box" aria-label="Interactive questions about the Weeping Willow">
+                <div class="qa-box__header">
+                  <h3>Explore This Artwork</h3>
+                  <p>Select a question to read a simple answer</p>
+                </div>
+                <div class="qa-box__questions" role="group" aria-label="Question buttons">
+                  <button class="qa-btn"
+                    data-answer="This painting is Monet's way of expressing grief. He painted it in 1919, just after World War I ended. France had suffered enormous losses, and Monet was personally affected — his son had served in the war. The weeping willow has historically been a symbol of mourning, and Monet used it to put his sorrow directly onto canvas without ever showing a human face."
+                    aria-label="Question: What does this painting mean?">
+                    What does this mean?
+                  </button>
+                  <button class="qa-btn"
+                    data-answer="This painting matters because it shows that Impressionism was not just about capturing pretty scenes in sunlight. At its most powerful, the style could carry heavy emotional weight. Monet used loose brushstrokes and cool, muted color to create something that feels like a painting of grief itself — not a description of grief, but the feeling of it."
+                    aria-label="Question: Why does this painting matter?">
+                    Why does it matter?
+                  </button>
+                  <button class="qa-btn"
+                    data-answer="Look at the direction of the brushstrokes — they follow the downward sweep of the branches, reinforcing the sense of weight and falling. Notice the colors: there is no warm sunlight here. The greens are cool and the shadows are deep. Look at how the branches almost fill the entire canvas — there is no sky, no horizon, no sense of openness. Only the weight of the drooping branches pressing in from all sides."
+                    aria-label="Question: What should I look for?">
+                    What should I notice?
+                  </button>
+                </div>
+                <div class="qa-box__answer" aria-live="polite" aria-atomic="true">
+                  <p class="qa-box__answer-text qa-box__placeholder">
+                    Select a question above to read the answer.
+                  </p>
+                </div>
               </div>
 
             </div>
-            <!-- end qa-box -->
-
           </div>
-          <!-- end artwork-spotlight__info -->
-
         </div>
-        <!-- end artwork-spotlight -->
-
       </div>
     </section>
 
-
-    <!-- ---- WHY IT MATTERS ---- -->
-    <section class="section" aria-labelledby="why-impressionism">
+    <!-- =============================================
+         WHY IT MATTERS
+    ============================================= -->
+    <section class="section" style="border-top: 1px solid var(--rule);" aria-labelledby="why-impressionism">
       <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Takeaway</span>
-          <h2 id="why-impressionism">Why Impressionism Still Matters</h2>
-        </div>
-
-        <div class="why-card why-card--impress">
-          <h3>Art as Feeling, Not Just Fact</h3>
+        <span class="eyebrow">Takeaway</span>
+        <h2 id="why-impressionism" style="margin-bottom: 1.75rem;">Why Impressionism Still Matters</h2>
+        <div class="takeaway">
+          <h3>Art as Experience, Not Record</h3>
           <p>
-            Impressionism changed what art was <em>for</em>. Before it, painting tried to
-            record the world accurately. After Impressionism, painting could record
-            <em>feelings</em>, how a moment felt, not just how it looked.
-            This idea rippled through all of modern art. Abstract art, Expressionism,
-            and even modern photography all owe a debt to the Impressionists who first
-            said: <em>your inner experience of the world is just as real and valid as
-            the world itself.</em>
+            Impressionism made a permanent argument about what art is for. Before it,
+            painting largely tried to record the world — to show what something looked like.
+            After Impressionism, painting could show what something <em>felt</em> like.
+            How a morning in a garden felt. How grief felt. How a fleeting second of
+            afternoon light felt before it was gone.
+          </p>
+          <p>
+            That shift — from recording to experiencing — changed everything that came after it.
+            Abstract art, modern photography, and the entire idea of capturing mood rather than
+            fact all trace back to what the Impressionists were doing in the parks and gardens
+            of 1870s France.
           </p>
         </div>
-
-        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="baroque.html" class="btn btn--baroque">← Review Baroque</a>
-          <a href="index.html" class="btn btn--outline">← Back to Home</a>
+        <div class="page-nav">
+          <a href="baroque.html" class="btn btn--light">Back: Baroque</a>
+          <a href="index.html" class="btn btn--outline">Back to Home</a>
         </div>
-
       </div>
     </section>
 
   </main>
 
-
-  <!-- =============================================
-       SITE FOOTER
-  ============================================= -->
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
       <a class="site-footer__logo" href="index.html">Art Made Easy</a>
-      <p>Made with care for accessibility.</p>
+      <p class="site-footer__copy">Digital Culture Capstone &mdash; Built for accessibility</p>
       <nav aria-label="Footer navigation">
         <ul class="site-footer__links" role="list">
           <li><a href="index.html">Home</a></li>

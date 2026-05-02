@@ -1,251 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding and viewport for mobile responsiveness -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Art Made Easy – a free, accessible platform that makes art history simple and approachable for everyone." />
-
-  <title>Art Made Easy – Home</title>
-
-  <!-- Link to our shared stylesheet -->
+  <meta name="description" content="Art Made Easy — a free, accessible platform that makes art history simple and approachable for everyone." />
+  <title>Art Made Easy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- =============================================
-       SKIP TO CONTENT LINK
-       Allows keyboard/screen-reader users to jump
-       past the navigation directly to main content.
-  ============================================= -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-
   <!-- =============================================
-       SITE NAVIGATION
+       NAVIGATION — fixed, transparent until scroll
   ============================================= -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="container site-nav__inner">
-
-      <!-- Logo / Brand -->
-      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy – Home">
-        Art Made Easy
-      </a>
-
-      <!-- Mobile hamburger button (shown only on small screens via CSS) -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
-        ☰
-      </button>
-
-      <!-- Nav links list -->
+      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy — Home">Art Made Easy</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">&#9776;</button>
       <ul class="site-nav__links" id="nav-links" role="list">
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="baroque.html">Baroque</a></li>
         <li><a href="impressionism.html">Impressionism</a></li>
       </ul>
-
     </div>
   </nav>
 
-
-  <!-- =============================================
-       MAIN CONTENT
-  ============================================= -->
   <main id="main-content">
 
-    <!-- ---- HERO SECTION ---- -->
+    <!-- =============================================
+         HERO — full-bleed dark image
+    ============================================= -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
 
-        <!-- Small label above the heading -->
-        <span class="hero__eyebrow">Free · Accessible · Beginner-Friendly</span>
-
-        <!-- Main heading -->
-        <h1 class="hero__title" id="hero-heading">
-          Making Art History<br>Approachable for Everyone
-        </h1>
-
-        <!-- Brief description / mission statement -->
-        <p class="hero__subtitle">
-          Art history doesn't have to be intimidating. We break down complex movements
-          into clear, simple language, so everyone, regardless of background or ability,
-          can appreciate and understand great art.
-        </p>
-
-        <!-- Call-to-action buttons -->
-        <div class="hero__actions">
-          <a href="baroque.html" class="btn btn--primary">Explore Baroque →</a>
-          <a href="impressionism.html" class="btn btn--outline">Explore Impressionism →</a>
-        </div>
-
+      <!-- Background image slot.
+           TO ADD YOUR PHOTO: uncomment the <img> tag below,
+           save your file as hero-bg.jpg in the project folder. -->
+      <div class="hero__bg" aria-hidden="true">
+        <!-- <img src="hero-bg.jpg" alt="" /> -->
       </div>
-    </section>
 
+      <div class="hero__overlay" aria-hidden="true"></div>
 
-    <!-- ---- MISSION SECTION ---- -->
-    <section class="section section--alt" aria-labelledby="mission-heading">
-      <div class="container">
-
-        <!-- Section header -->
-        <div class="section-header">
-          <span class="section-header__tag">Our Mission</span>
-          <h2 id="mission-heading">Why Art Made Easy?</h2>
-          <p>We believe art should never feel exclusive. Here's what guides us.</p>
-        </div>
-
-        <!-- Three mission pillars -->
-        <ul class="features-list" role="list" aria-label="Our three mission pillars">
-
-          <li>
-            <!-- Decorative icon (hidden from screen readers as it's decorative) -->
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Art is for Everyone</strong>
-              <span>
-                Art has historically been discussed in complex, academic language that can feel
-                unwelcoming. We change that by using plain, everyday words without dumbing anything down.
-              </span>
-            </div>
-          </li>
-
-          <li>
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Simplified for Beginners</strong>
-              <span>
-                Whether you've never visited a museum or you're a curious student, our guides
-                meet you exactly where you are, no prior knowledge required.
-              </span>
-            </div>
-          </li>
-
-          <li>
-            <span class="features-list__icon" aria-hidden="true">*</span>
-            <div class="features-list__text">
-              <strong>Built with Accessibility in Mind</strong>
-              <span>
-                Every page follows accessibility best practices, clear contrast, readable fonts,
-                image descriptions, and keyboard-friendly navigation, so no one is left out.
-              </span>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>
-
-
-    <!-- ---- MOVEMENTS SECTION ---- -->
-    <section class="section" aria-labelledby="movements-heading">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Our Courses</span>
-          <h2 id="movements-heading">Two Movements to Explore</h2>
-          <p>
-            We're focusing on two of the most influential art movements in Western history.
-            Pick a movement below to start learning.
+      <div class="hero__content">
+        <div class="container">
+          <span class="hero__eyebrow">A Digital Culture Project</span>
+          <h1 id="hero-heading">Making Art History Approachable for Everyone</h1>
+          <p class="hero__desc">
+            Art history has a reputation for being difficult and exclusive.
+            This platform changes that — two major movements, explained in plain
+            language, with real artworks from the Modern Art Museum of Fort Worth.
           </p>
+          <div class="hero__links">
+            <a href="baroque.html" class="btn btn--light">Explore Baroque</a>
+            <a href="impressionism.html" class="btn btn--outline">Explore Impressionism</a>
+          </div>
         </div>
-
-        <!-- Two movement cards side-by-side (stack on mobile) -->
-        <div class="cards-grid">
-
-          <!-- Baroque Card -->
-          <article class="movement-card movement-card--baroque" aria-label="Baroque movement card">
-            <div class="movement-card__header">
-              <!-- Decorative large number in the background -->
-              <span class="movement-card__icon" aria-hidden="true">I</span>
-              <h3 class="movement-card__title">Baroque</h3>
-            </div>
-            <div class="movement-card__body">
-              <p class="movement-card__desc">
-                Bold. Dramatic. Intense. Baroque art (roughly 1600–1750) used extreme
-                light and shadow to create paintings full of emotion, movement, and
-                religious meaning. Think candlelit scenes where every shadow tells a story.
-              </p>
-              <a href="baroque.html" class="btn btn--baroque" aria-label="Start the Baroque lesson">
-                Start Lesson →
-              </a>
-            </div>
-          </article>
-
-          <!-- Impressionism Card -->
-          <article class="movement-card movement-card--impress" aria-label="Impressionism movement card">
-            <div class="movement-card__header">
-              <span class="movement-card__icon" aria-hidden="true">II</span>
-              <h3 class="movement-card__title">Impressionism</h3>
-            </div>
-            <div class="movement-card__body">
-              <p class="movement-card__desc">
-                Soft. Hazy. Beautiful. Impressionism (1860s–1880s) broke the rules of
-                precise painting and instead captured light, color, and everyday moments
-                with quick, loose brushstrokes, like a memory painted in sunlight.
-              </p>
-              <a href="impressionism.html" class="btn btn--impress" aria-label="Start the Impressionism lesson">
-                Start Lesson →
-              </a>
-            </div>
-          </article>
-
-        </div>
-
       </div>
+
     </section>
 
+    <!-- =============================================
+         MISSION
+    ============================================= -->
+    <div class="about-strip">
+      <div class="container about-strip__inner">
 
-    <!-- ---- HOW TO USE THIS SITE ---- -->
-    <section class="section section--alt" aria-labelledby="howto-heading">
-      <div class="container">
+        <h2 class="about-strip__heading">Why Art<br>Made Easy?</h2>
 
-        <div class="section-header">
-          <span class="section-header__tag">How It Works</span>
-          <h2 id="howto-heading">Learning in Three Simple Steps</h2>
-        </div>
-
-        <ul class="features-list" role="list" aria-label="How to use this platform">
+        <ul class="mission-list" aria-label="Our three guiding principles">
           <li>
-            <span class="features-list__icon" aria-hidden="true">1️⃣</span>
-            <div class="features-list__text">
-              <strong>Pick a Movement</strong>
-              <span>Choose Baroque or Impressionism from the menu or the cards above.</span>
+            <span class="mission-list__num">01</span>
+            <div class="mission-list__text">
+              <strong>Art is for Everyone</strong>
+              <p>
+                Art history has long been discussed in language that feels unwelcoming
+                to anyone outside a university setting. We write for real people, using
+                plain words without losing the substance.
+              </p>
             </div>
           </li>
           <li>
-            <span class="features-list__icon" aria-hidden="true">2️⃣</span>
-            <div class="features-list__text">
-              <strong>Read the Guide</strong>
-              <span>We explain the movement in plain language with key features and historical context.</span>
+            <span class="mission-list__num">02</span>
+            <div class="mission-list__text">
+              <strong>Simplified for Beginners</strong>
+              <p>
+                Whether you have never visited a museum or you are a student looking
+                for a starting point, these guides meet you where you are.
+                No art background required.
+              </p>
             </div>
           </li>
           <li>
-            <span class="features-list__icon" aria-hidden="true">3️⃣</span>
-            <div class="features-list__text">
-              <strong>Ask Questions Interactively</strong>
-              <span>Use the Q&amp;A box on each page to get simple answers about the featured artwork.</span>
+            <span class="mission-list__num">03</span>
+            <div class="mission-list__text">
+              <strong>Built with Accessibility in Mind</strong>
+              <p>
+                Every page is designed with strong contrast, readable text, image
+                descriptions, and keyboard-friendly navigation so that no one is
+                excluded from learning.
+              </p>
             </div>
           </li>
         </ul>
 
+      </div>
+    </div>
+
+    <!-- =============================================
+         MOVEMENTS
+    ============================================= -->
+    <section class="movements-section" aria-labelledby="movements-heading">
+      <div class="container">
+
+        <span class="eyebrow">Lessons</span>
+        <h2 id="movements-heading">Two Movements to Explore</h2>
+
+        <div class="movements-grid" role="list">
+
+          <!-- Baroque panel -->
+          <article class="movement-panel" aria-label="Baroque lesson" role="listitem">
+            <!-- Background image slot.
+                 TO ADD: uncomment, save file as baroque-panel.jpg -->
+            <div class="movement-panel__bg" aria-hidden="true">
+              <!-- <img src="baroque-panel.jpg" alt="" /> -->
+            </div>
+            <div class="movement-panel__overlay" aria-hidden="true"></div>
+            <div class="movement-panel__content">
+              <p class="movement-panel__era">c. 1600 &ndash; 1750</p>
+              <h3>Baroque</h3>
+              <p>
+                Dramatic light and shadow, intense emotion, and deep religious meaning.
+                Baroque painting was meant to move you.
+              </p>
+              <a href="baroque.html" class="btn btn--outline" aria-label="Start the Baroque lesson">Start Lesson</a>
+            </div>
+          </article>
+
+          <!-- Impressionism panel -->
+          <article class="movement-panel" aria-label="Impressionism lesson" role="listitem">
+            <div class="movement-panel__bg" aria-hidden="true">
+              <!-- <img src="impressionism-panel.jpg" alt="" /> -->
+            </div>
+            <div class="movement-panel__overlay" aria-hidden="true"></div>
+            <div class="movement-panel__content">
+              <p class="movement-panel__era">c. 1860s &ndash; 1880s</p>
+              <h3>Impressionism</h3>
+              <p>
+                Loose brushstrokes, captured light, and ordinary life as subject matter.
+                The Impressionists changed what painting was allowed to be.
+              </p>
+              <a href="impressionism.html" class="btn btn--outline" aria-label="Start the Impressionism lesson">Start Lesson</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         HOW IT WORKS
+    ============================================= -->
+    <section class="steps-section" aria-labelledby="steps-heading">
+      <div class="container">
+        <span class="eyebrow">How It Works</span>
+        <h2 id="steps-heading">Learning in Three Steps</h2>
+        <div class="steps-grid" role="list">
+
+          <div class="step-cell" role="listitem">
+            <span class="step-cell__num">01</span>
+            <strong>Pick a Movement</strong>
+            <p>Choose Baroque or Impressionism from the navigation or the panels above.</p>
+          </div>
+
+          <div class="step-cell" role="listitem">
+            <span class="step-cell__num">02</span>
+            <strong>Read the Guide</strong>
+            <p>Each page explains the movement in plain language with historical context and key things to look for.</p>
+          </div>
+
+          <div class="step-cell" role="listitem">
+            <span class="step-cell__num">03</span>
+            <strong>Explore the Artwork</strong>
+            <p>Use the interactive Q&amp;A on each page to look closer at a featured painting from the Modern Art Museum of Fort Worth.</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
   </main>
 
-
   <!-- =============================================
-       SITE FOOTER
+       FOOTER
   ============================================= -->
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
-
       <a class="site-footer__logo" href="index.html">Art Made Easy</a>
-
-      <p>A Digital Culture capstone project. Made with care for accessibility.</p>
-
+      <p class="site-footer__copy">Digital Culture Capstone &mdash; Built for accessibility</p>
       <nav aria-label="Footer navigation">
         <ul class="site-footer__links" role="list">
           <li><a href="index.html">Home</a></li>
@@ -253,12 +205,9 @@
           <li><a href="impressionism.html">Impressionism</a></li>
         </ul>
       </nav>
-
     </div>
   </footer>
 
-
-  <!-- Link to our shared JavaScript file (placed at end of body for performance) -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,28 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Learn about Baroque art in simple, clear language. Discover chiaroscuro, dramatic movement, and the role of the Catholic Church in shaping one of history's most intense art styles." />
-
-  <title>Baroque Art – Art Made Easy</title>
-
+  <meta name="description" content="Learn about Baroque art in clear, simple language. Discover chiaroscuro, dramatic movement, and the Catholic Church's influence." />
+  <title>Baroque Art — Art Made Easy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Skip link for accessibility -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- =============================================
-       SITE NAVIGATION
-  ============================================= -->
+  <!-- Navigation -->
   <nav class="site-nav" aria-label="Main navigation">
     <div class="container site-nav__inner">
-      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy – Home">
-        Art Made Easy
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
-        ☰
-      </button>
+      <a class="site-nav__logo" href="index.html" aria-label="Art Made Easy — Home">Art Made Easy</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">&#9776;</button>
       <ul class="site-nav__links" id="nav-links" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="baroque.html" aria-current="page">Baroque</a></li>
@@ -33,332 +24,285 @@
     </div>
   </nav>
 
-
-  <!-- =============================================
-       MAIN CONTENT
-  ============================================= -->
   <main id="main-content">
 
-    <!-- ---- PAGE HERO ---- -->
-    <section class="page-hero page-hero--baroque" aria-labelledby="page-title">
-      <div class="container">
-        <!-- Breadcrumb-style label -->
-        <span class="page-hero__tag">Lesson 1 of 2</span>
-
-        <h1 id="page-title">Baroque Art</h1>
-        <p class="page-hero__desc">
-          Dramatic. Emotional. Deeply religious. Learn what made Baroque one of the most
-          powerful art movements in history, and why it still fascinates us today.
-        </p>
+    <!-- =============================================
+         PAGE HERO
+    ============================================= -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg" aria-hidden="true">
+        <!-- Optional: <img src="baroque-hero.jpg" alt="" /> -->
+      </div>
+      <div class="page-hero__overlay" aria-hidden="true"></div>
+      <div class="page-hero__content">
+        <div class="container">
+          <span class="eyebrow">Lesson 1 of 2</span>
+          <h1 id="page-title">Baroque Art</h1>
+          <p class="page-hero__sub">
+            Dramatic, emotional, and deeply connected to religion.
+            Baroque art transformed the way painters used light and movement to make viewers feel something real.
+          </p>
+        </div>
       </div>
     </section>
 
+    <!-- =============================================
+         CONTENT SECTIONS
+    ============================================= -->
+    <div class="container">
 
-    <!-- ---- WHAT IS BAROQUE ---- -->
-    <section class="section" aria-labelledby="what-is-baroque">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">The Basics</span>
-          <h2 id="what-is-baroque">What is Baroque Art?</h2>
+      <!-- What is Baroque -->
+      <div class="content-row" aria-labelledby="what-baroque">
+        <div class="content-row__label">
+          <h2 id="what-baroque">What is<br>Baroque Art?</h2>
         </div>
-
-        <div class="info-block">
+        <div class="content-body">
           <p>
             <strong>Baroque art</strong> was a style that flourished roughly between
-            <strong>1600 and 1750</strong>, mostly in Europe. The word "baroque" originally
-            meant something ornate and irregular, like an oddly shaped pearl.
+            <strong>1600 and 1750</strong>, mostly across Europe. The word "baroque" came from
+            a Portuguese term for an irregularly shaped pearl — something ornate and unexpected.
           </p>
           <p>
-            Think of Baroque art as the "action movie" of its time. Painters didn't want calm,
-            peaceful scenes. They wanted <em>drama</em>. They wanted you to feel something
-            powerful, awe, fear, devotion, or sorrow, the moment you looked at their work.
+            If you had to compare Baroque to something modern, it would be closer to a thriller
+            film than a documentary. Painters were not interested in calm, balanced compositions.
+            They wanted drama — they wanted the person standing in front of the canvas to feel
+            something immediately, before they even read the title.
           </p>
           <p>
-            Baroque art wasn't just about looking pretty. It had a <strong>purpose</strong>:
-            to move people emotionally and to communicate powerful messages, especially
-            religious ones.
+            Baroque art also had a practical purpose. For the Catholic Church, which funded much
+            of it, these paintings were meant to communicate, persuade, and inspire. That
+            urgency is part of why Baroque work still feels so alive.
           </p>
         </div>
-
       </div>
-    </section>
 
-
-    <!-- ---- RELIGION & THE CHURCH ---- -->
-    <section class="section section--alt" aria-labelledby="church-connection">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Historical Context</span>
-          <h2 id="church-connection">The Catholic Church's Influence</h2>
+      <!-- The Church -->
+      <div class="content-row" aria-labelledby="church-heading">
+        <div class="content-row__label">
+          <h2 id="church-heading">The Catholic Church's Influence</h2>
         </div>
-
-        <div class="info-block">
+        <div class="content-body">
           <p>
-            Baroque art didn't appear out of nowhere. It was partly a <strong>response to the
-            Protestant Reformation</strong>, a major religious split in Europe in the 1500s
-            when many people left the Catholic Church.
+            Baroque art didn't emerge in a vacuum. It grew out of one of the most significant
+            conflicts in European history — the <strong>Protestant Reformation</strong>,
+            a movement that started in the early 1500s and led millions of people to break
+            from the Catholic Church.
           </p>
-          <p>
-            The Catholic Church fought back by using art as a tool. They commissioned huge,
-            stunning paintings and sculptures to:
-          </p>
-          <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--color-muted);">
-            <li>Show the glory and power of God</li>
-            <li>Make religious stories vivid and emotional for ordinary people</li>
-            <li>Draw people back to the Church through awe and wonder</li>
+          <p>The Church responded, in part, through art. They commissioned sweeping, emotional paintings designed to:</p>
+          <ul aria-label="Goals of Church-commissioned Baroque art">
+            <li>Demonstrate the grandeur and power of God</li>
+            <li>Bring Bible stories to life for people who couldn't read</li>
+            <li>Pull people back toward faith through sheer emotional force</li>
           </ul>
           <p>
-            This is why so many Baroque paintings show scenes from the Bible, saints, angels,
-            the Virgin Mary, and moments of miraculous transformation. Art was essentially
-            the <em>advertising</em> of its time.
+            This is why so many Baroque paintings depict scenes from scripture. Art was the
+            most powerful mass communication tool of its time.
           </p>
         </div>
-
       </div>
-    </section>
 
-
-    <!-- ---- KEY FEATURES ---- -->
-    <section class="section" aria-labelledby="key-features">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Key Features</span>
-          <h2 id="key-features">What to Look for in Baroque Art</h2>
-          <p>These three features will help you recognize a Baroque painting immediately.</p>
+      <!-- Key Features -->
+      <div class="content-row" aria-labelledby="features-heading">
+        <div class="content-row__label">
+          <h2 id="features-heading">What to Look For</h2>
         </div>
-
-        <!-- Feature list -->
-        <ul class="features-list" role="list" aria-label="Key features of Baroque art">
-
-          <!-- Feature 1: Chiaroscuro -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">1</span>
-            <div class="features-list__text">
-              <strong>Chiaroscuro: Light vs. Dark</strong>
-              <span>
-                <em>Chiaroscuro</em> (kee-AH-roh-SKYOO-roh) is an Italian word meaning
-                "light-dark." Baroque painters were masters of contrast, bright light
-                bursting through deep, inky shadow. Imagine a single candle illuminating
-                a face in an otherwise pitch-black room. That's chiaroscuro. It creates
-                drama, focus, and a sense of mystery. The most famous master of this
-                technique was <strong>Caravaggio</strong>.
-              </span>
-            </div>
-          </li>
-
-          <!-- Feature 2: Drama and Movement -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">2</span>
-            <div class="features-list__text">
-              <strong>Drama and Movement</strong>
-              <span>
-                Baroque figures are rarely still. They twist, reach, fall, or surge forward.
-                Clothing billows. Muscles strain. It looks like a photograph taken mid-action.
-                Compare this to earlier Renaissance art, where figures stood calm and
-                perfectly composed. Baroque broke that stillness completely.
-              </span>
-            </div>
-          </li>
-
-          <!-- Feature 3: Emotional Intensity -->
-          <li>
-            <span class="features-list__icon" aria-hidden="true">3</span>
-            <div class="features-list__text">
-              <strong>Emotional Intensity</strong>
-              <span>
-                Baroque art wants you to <em>feel</em> something. Faces show real human
-                emotions, anguish, ecstasy, fear, grief, triumph. This was revolutionary.
-                Earlier art often showed idealized, emotionless faces. Baroque painters
-                showed real, raw humanity. The goal was to connect the viewer emotionally
-                to the scene, especially in religious paintings.
-              </span>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>
-
-
-    <!-- ---- FEATURED ARTWORK ---- -->
-    <section class="section section--alt" aria-labelledby="artwork-heading">
-      <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Featured Artwork</span>
-          <h2 id="artwork-heading">A Closer Look</h2>
-          <p>
-            Let's apply what we've learned to a real Baroque painting.
+        <div class="content-body">
+          <p style="margin-bottom: 0.5rem; color: var(--white-faint);">
+            Three elements you'll find in almost every Baroque work.
           </p>
+          <table class="features-table" aria-label="Key features of Baroque art">
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>
+                  <strong>Chiaroscuro &mdash; Light and Dark</strong>
+                  <span>
+                    <em>Chiaroscuro</em> (kee-AH-roh-SKYOO-roh) is Italian for "light-dark."
+                    Baroque painters were masters of contrast — bright light cutting through
+                    deep shadow, the way a single candle illuminates a face in a completely
+                    dark room. It creates focus, drama, and a sense that something important
+                    is happening right now. The artist most associated with this is
+                    <strong>Caravaggio</strong>, whose paintings look almost lit by a spotlight.
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>
+                  <strong>Drama and Movement</strong>
+                  <span>
+                    Baroque figures are rarely calm or still. They twist, reach, recoil, or
+                    lunge. Fabric billows. Muscles strain. The scene looks like it was
+                    captured mid-action. This was a sharp contrast to earlier Renaissance
+                    painting, where figures tended to be composed and serene. Baroque art
+                    broke that stillness entirely.
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>
+                  <strong>Emotional Intensity</strong>
+                  <span>
+                    Where earlier painting often showed idealized, expressionless faces,
+                    Baroque painters wanted viewers to see real human emotion — grief, terror,
+                    rapture, shock. Faces in Baroque paintings carry the full weight of what
+                    is happening to them. This rawness is one of the reasons these works
+                    still feel immediate and affecting centuries later.
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <!-- Artwork spotlight grid -->
-        <div class="artwork-spotlight" role="figure" aria-labelledby="artwork-title">
+    </div>
+    <!-- end .container for content rows -->
 
-          <!-- Image side -->
-          <div class="artwork-spotlight__img-wrap">
+    <!-- =============================================
+         ARTWORK SECTION — full-width feel
+    ============================================= -->
+    <section class="section" aria-labelledby="artwork-heading">
+      <div class="container">
+
+        <span class="eyebrow">Featured Artwork</span>
+        <h2 id="artwork-heading" style="margin-bottom: 1.75rem;">A Closer Look</h2>
+
+        <div class="artwork-block" role="figure" aria-labelledby="artwork-title">
+
+          <!-- Image slot -->
+          <div class="artwork-block__img">
             <!--
-              NOTE FOR STUDENTS:
-              To display the actual painting, download a public-domain image of
-              "The Cheat with the Ace of Clubs" by Georges de La Tour from a
-              source like Wikimedia Commons, save it as "cheat-ace-clubs.jpg"
-              in the same folder, and update the src attribute below.
+              TO ADD YOUR MUSEUM PHOTO:
+              1. Save your photo as  cheat-ace-clubs.jpg  in this folder
+              2. Delete the entire .img-placeholder block below
+              3. Uncomment the <img> tag
 
-              Public domain source: https://commons.wikimedia.org/wiki/File:La_Tour_Cheat.jpg
-            -->
-            <div class="artwork-placeholder" role="img" aria-label="Placeholder for The Cheat with the Ace of Clubs by Georges de La Tour. The painting shows a card game scene lit dramatically by candlelight, illustrating chiaroscuro technique.">
-              <span class="artwork-placeholder__icon" aria-hidden="true"></span>
-              <p><strong>"The Cheat with the Ace of Clubs"</strong></p>
-              <p class="artwork-placeholder__caption">
-                Georges de La Tour, c. 1630–1634<br>
-                <em>Download and place image here as cheat-ace-clubs.jpg</em><br>
-                (Free from Wikimedia Commons)
-              </p>
-            </div>
-
-            <!--
-              UNCOMMENT THIS IMG TAG when you have the image file saved locally:
               <img
                 src="cheat-ace-clubs.jpg"
-                alt="The Cheat with the Ace of Clubs by Georges de La Tour: a candlelit card game scene
-                where well-dressed players sit around a table. A young man on the left secretly pulls
-                a card from behind his back while another figure exchanges knowing glances with a
-                servant holding wine. The painting uses deep shadows and warm candlelight to create
-                dramatic contrast, a hallmark of Baroque chiaroscuro."
-                width="600"
-                height="480"
+                alt="The Cheat with the Ace of Clubs photographed at the Modern Art
+                     Museum of Fort Worth. A candlelit card game scene where one player
+                     secretly pulls a hidden card from behind his back. Warm light falls
+                     on some faces while others recede into deep shadow — a clear example
+                     of Baroque chiaroscuro technique."
+                width="700"
+                height="560"
               />
             -->
+            <div class="img-placeholder" role="img" aria-label="Photo placeholder — The Cheat with the Ace of Clubs. Add your museum photo here.">
+              <div class="img-placeholder__frame" aria-hidden="true">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <rect x="3" y="3" width="26" height="26" stroke-width="1.5"/>
+                  <circle cx="11" cy="12" r="3" stroke-width="1.5"/>
+                  <polyline points="3,24 10,17 15,22 20,16 29,24" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <strong>Add your museum photo here</strong>
+              <p>Save as cheat-ace-clubs.jpg and update the img src above</p>
+            </div>
           </div>
 
-          <!-- Info side -->
-          <div class="artwork-spotlight__info">
-            <p class="artwork-spotlight__tag">Baroque Masterpiece</p>
-            <h3 class="artwork-spotlight__title" id="artwork-title">
-              "The Cheat with the Ace of Clubs"
-            </h3>
-            <p class="artwork-spotlight__meta">
-              Georges de La Tour &nbsp;·&nbsp; c. 1630–1634 &nbsp;·&nbsp; Oil on Canvas
+          <!-- Info -->
+          <div class="artwork-block__info">
+            <p class="artwork-block__label">Baroque &mdash; Featured Work</p>
+            <p class="artwork-block__title" id="artwork-title">The Cheat with the Ace of Clubs</p>
+            <p class="artwork-block__meta">
+              Georges de La Tour &nbsp;&middot;&nbsp; c. 1630&ndash;1634<br>
+              Oil on Canvas<br>
+              Photographed at the Modern Art Museum of Fort Worth
             </p>
+            <div class="artwork-block__body">
+              <p>
+                At first glance this looks like a card game among elegantly dressed strangers.
+                Look closer and you'll see it's something else entirely — one player is cheating,
+                quietly pulling a hidden card from behind his back while the others are distracted.
+              </p>
+              <p>
+                But the story isn't really the point. The painting is a showcase of Baroque
+                technique. Notice how the <strong>candlelight</strong> falls unevenly — some
+                faces are illuminated, others recede into shadow. That is chiaroscuro in action.
+                Notice the <strong>tension</strong> in the faces: sidelong glances, suppressed
+                expressions, hands doing one thing while eyes do another.
+              </p>
+              <p>
+                What makes this painting interesting is that it is not religious. It uses the
+                full power of Baroque technique to tell a secular moral story. The darkness
+                is not just atmospheric — it represents deceit.
+              </p>
 
-            <p>
-              This painting shows a <strong>card game being rigged</strong>, one player
-              secretly cheats while accomplices distract the others. But look beyond the
-              story and you'll see pure Baroque technique at work.
-            </p>
-
-            <p>
-              Notice how the <strong>candlelight</strong> falls unevenly across the faces,
-              some are lit dramatically, others sink into shadow. That is chiaroscuro.
-              Notice the <strong>tension</strong> on the faces, stolen glances, hidden hands,
-              suppressed smiles. That is emotional intensity.
-            </p>
-
-            <p>
-              Interestingly, this isn't a religious scene, it's an everyday moral story.
-              Baroque techniques were powerful enough to be used for secular (non-religious)
-              storytelling too. The darkness isn't just physical, it represents moral
-              corruption and deceit.
-            </p>
-
-            <!-- Interactive Q&A box for this artwork -->
-            <div class="qa-box" aria-label="Interactive questions about this artwork" style="margin-top: 1.5rem;">
-
-              <div class="qa-box__header">
-                <h3>Explore This Artwork</h3>
-                <p>Click a question to get a simple answer</p>
-              </div>
-
-              <!-- Clickable question buttons with answers stored in data-answer -->
-              <div class="qa-box__questions" role="group" aria-label="Question buttons">
-                <button
-                  class="qa-btn"
-                  data-answer="This painting tells the story of a card game where a player is cheating. He's secretly pulling a hidden card from behind his back while the other people at the table don't notice. The artist uses this sneaky scene to comment on dishonesty and moral corruption, the darkness in the painting represents the moral darkness of deception."
-                  aria-label="Question: What does this artwork mean?"
-                >
-                  What does this mean?
-                </button>
-
-                <button
-                  class="qa-btn"
-                  data-answer="This painting is important because it perfectly demonstrates the Baroque technique of chiaroscuro, the contrast of light and dark. It shows that Baroque art wasn't only about religious subjects; it could also be used to tell moral stories about everyday life. It reminds us that art can be a mirror of human behavior and our capacity for deception."
-                  aria-label="Question: Why is this artwork important?"
-                >
-                  Why does it matter?
-                </button>
-
-                <button
-                  class="qa-btn"
-                  data-answer="Look at the light source first, it comes from a candle, casting warm light on some faces while leaving others in deep shadow. Then look at the hands: one player's hand is pulling a card from behind his back. Notice the eyes, each person is looking somewhere different, exchanging secret glances. Finally, notice how the rich clothing and table setting tell you this is a wealthy setting, making the dishonesty even more pointed."
-                  aria-label="Question: What should I notice in this artwork?"
-                >
-                  What should I notice?
-                </button>
-              </div>
-
-              <!-- Answer display area -->
-              <div class="qa-box__answer" aria-live="polite" aria-atomic="true">
-                <span class="qa-box__answer-icon" aria-hidden="true"></span>
-                <p class="qa-box__answer-text qa-box__placeholder">
-                  Select a question above to see the answer here.
-                </p>
+              <!-- Q&A box -->
+              <div class="qa-box" aria-label="Interactive questions about this artwork">
+                <div class="qa-box__header">
+                  <h3>Explore This Artwork</h3>
+                  <p>Select a question to read a simple answer</p>
+                </div>
+                <div class="qa-box__questions" role="group" aria-label="Question buttons">
+                  <button class="qa-btn"
+                    data-answer="This painting tells the story of a card game where one player is secretly cheating — he's pulling a card from behind his back while the others look away. The artist used this scene to make a point about moral corruption. The physical darkness in the painting mirrors the moral darkness of the deception taking place."
+                    aria-label="Question: What does this painting mean?">
+                    What does this mean?
+                  </button>
+                  <button class="qa-btn"
+                    data-answer="This painting matters because it proves Baroque technique could serve more than religious subjects. It applies all the drama and emotional intensity of the style to an everyday moral story — and it shows how art can make you look slowly. The cheating isn't obvious at first glance, which makes the painting feel like a puzzle you solve over time."
+                    aria-label="Question: Why does this painting matter?">
+                    Why does it matter?
+                  </button>
+                  <button class="qa-btn"
+                    data-answer="Start with the light. Notice where it falls and where it doesn't — some faces are fully visible, others half-hidden in shadow. Then look at the hands: one player is quietly pulling a card from behind his back. Look at the eyes next: each person is looking somewhere different, passing secret glances. Finally, the expensive clothing tells you these are wealthy people — which makes the dishonesty feel even more deliberate."
+                    aria-label="Question: What should I look for?">
+                    What should I notice?
+                  </button>
+                </div>
+                <div class="qa-box__answer" aria-live="polite" aria-atomic="true">
+                  <p class="qa-box__answer-text qa-box__placeholder">
+                    Select a question above to read the answer.
+                  </p>
+                </div>
               </div>
 
             </div>
-            <!-- end qa-box -->
-
           </div>
-          <!-- end artwork-spotlight__info -->
-
         </div>
-        <!-- end artwork-spotlight -->
-
       </div>
     </section>
 
-
-    <!-- ---- WHY IT MATTERS ---- -->
-    <section class="section" aria-labelledby="why-baroque">
+    <!-- =============================================
+         WHY IT MATTERS
+    ============================================= -->
+    <section class="section" style="border-top: 1px solid var(--rule);" aria-labelledby="why-baroque">
       <div class="container">
-
-        <div class="section-header">
-          <span class="section-header__tag">Takeaway</span>
-          <h2 id="why-baroque">Why Baroque Art Still Matters</h2>
-        </div>
-
-        <div class="why-card why-card--baroque">
-          <h3>The Power of Emotion in Art</h3>
+        <span class="eyebrow">Takeaway</span>
+        <h2 id="why-baroque" style="margin-bottom: 1.75rem;">Why Baroque Art Still Matters</h2>
+        <div class="takeaway">
+          <h3>The Legacy of Dramatic Light</h3>
           <p>
-            Baroque art taught the world that paintings don't have to be calm, perfect,
-            or idealized. Art can be raw, urgent, and deeply human. The techniques
-            invented during this period, especially chiaroscuro, influenced centuries
-            of painting, photography, and even Hollywood filmmaking. Every time you see
-            dramatic lighting in a movie, you're seeing the legacy of Baroque art.
+            Baroque art demonstrated something that every filmmaker, photographer, and designer
+            since has relied on: light is not just a technical element, it is an emotional one.
+            The techniques developed by Baroque painters — especially chiaroscuro — influenced
+            centuries of art and continue to shape how we tell visual stories today. When you
+            see a close-up face dramatically lit from one side in a film, you are looking at
+            the direct descendant of Baroque painting.
+          </p>
+          <p>
+            Beyond technique, Baroque art made the case that painting could be urgent and raw —
+            that it didn't have to be calm or idealized to be great.
           </p>
         </div>
-
-        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="impressionism.html" class="btn btn--impress">Next: Impressionism →</a>
-          <a href="index.html" class="btn btn--outline">← Back to Home</a>
+        <div class="page-nav">
+          <a href="impressionism.html" class="btn btn--light">Next: Impressionism</a>
+          <a href="index.html" class="btn btn--outline">Back to Home</a>
         </div>
-
       </div>
     </section>
 
   </main>
 
-
-  <!-- =============================================
-       SITE FOOTER
-  ============================================= -->
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container site-footer__inner">
-      <a class="site-footer__logo" href="index.html"> Art Made Easy</a>
-      <p>A Digital Culture capstone project. Made with care for accessibility.</p>
+      <a class="site-footer__logo" href="index.html">Art Made Easy</a>
+      <p class="site-footer__copy">Digital Culture Capstone &mdash; Built for accessibility</p>
       <nav aria-label="Footer navigation">
         <ul class="site-footer__links" role="list">
           <li><a href="index.html">Home</a></li>

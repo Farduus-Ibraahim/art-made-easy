@@ -464,7 +464,13 @@ Rules:
 
     const bubble = document.createElement('div');
     bubble.classList.add('ame-msg__bubble');
-    bubble.textContent = text;
+    bubble.innerHTML = text
+  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+  .replace(/^### (.*$)/gm, '<br><strong>$1</strong>')
+  .replace(/^## (.*$)/gm, '<br><strong>$1</strong>')
+  .replace(/^# (.*$)/gm, '<br><strong>$1</strong>')
+  .replace(/^- (.*$)/gm, '• $1')
+  .replace(/\n/g, '<br>');
 
     msgWrapper.appendChild(bubble);
     messagesEl.appendChild(msgWrapper);

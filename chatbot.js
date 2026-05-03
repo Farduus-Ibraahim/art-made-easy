@@ -513,7 +513,7 @@ Rules:
     showTyping();
 
     try {
-      const response = await fetch('https://art-made-easy-api.vercel.app/api/chat', {
+      const response = await fetch('https://art-made-easy-api.vercel.app/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

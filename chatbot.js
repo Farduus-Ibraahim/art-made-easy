@@ -513,46 +513,39 @@ Rules:
     showTyping();
 
     try {
-      const response = await fetch('https://art-made-easy-api.vercel.app/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 1000,
-          messages: conversationHistory,
-        }),
-      });
+  const response = await fetch('https://art-made-easy-api.vercel.app/api/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      messages: conversationHistory,
+    }),
+  });
 
-      const data = await response.json();
+  const data = await response.json();
 
-      hideTyping();
+  hideTyping();
 
-      if (data.content && data.content.length > 0) {
-        /* Extract the text reply */
-        const replyText = data.content
-          .filter(block => block.type === 'text')
-          .map(block => block.text)
-          .join('');
+  if (data && data.content && data.content.length > 0) {
+    const replyText = data.content
+      .filter(block => block.type === 'text')
+      .map(block => block.text)
+      .join('');
 
-        /* Add Claude's reply to history */
-        conversationHistory.push({ role: 'assistant', content: replyText });
+    conversationHistory.push({ role: 'assistant', content: replyText });
+    appendMessage('bot', replyText);
 
-        /* Show in the chat */
-        appendMessage('bot', replyText);
+  } else {
+    console.error('Full API response:', JSON.stringify(data));
+    appendMessage('bot', 'Something went wrong. Full error: ' + JSON.stringify(data));
+  }
 
-      } else {
-        /* Handle unexpected response shape */
-        appendMessage('bot', 'Something went wrong with my response. Please try asking again.');
-        console.error('Unexpected API response:', data);
-      }
-
-    } catch (error) {
-      hideTyping();
-      appendMessage('bot', 'I\'m having trouble connecting right now. Please check your internet connection and try again.');
-      console.error('Chat API error:', error);
-    }
+} catch (error) {
+  hideTyping();
+  appendMessage('bot', 'Catch error: ' + error.message);
+  console.error('Chat error:', error);
+}
 
     isWaiting = false;
     /* Re-enable send button only if there's text in the input */

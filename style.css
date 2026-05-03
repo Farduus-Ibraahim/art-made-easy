@@ -13,11 +13,11 @@
   --dark-mid:     #1C1C1C;
   --dark-soft:    #252525;
   --rule:         #2E2E2E;
-  --rule-light:   #3A3A3A;
+  --rule-light:   #b57575;
   --white:        #F4F1EC;
-  --white-dim:    rgba(255, 255, 255, 0.85);
-  --white-faint:  rgba(244, 241, 236, 0.28);
-  --accent:       #C8A96E;
+  --white-dim:    rgb(244, 241, 236, 1);
+  --white-faint:  rgba(255, 229, 218, 0.954);
+  --accent:       #c88c6e;
   --accent-dim:   rgba(200, 169, 110, 0.15);
 
   --font-display: 'Cormorant Garamond', Georgia, serif;

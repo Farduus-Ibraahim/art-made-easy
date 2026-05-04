@@ -458,7 +458,7 @@ strong { font-weight: 500; color: var(--white); }
 
 .page-hero__overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.4) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
 }
 
 .page-hero__content {

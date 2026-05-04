@@ -1,0 +1,88 @@
+
+<!-- saved from url=(0079)https://themodernfw.secure-cdn.na3.accessoticketing.com/embed/shim.html?_v=5.20 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+function localStorageName(item) {
+	// the store is prefixing localStorage with "ls"
+	return "ls."+ item;
+}
+function getLocalStorageSessionKey(){
+    try {
+			var session = (localStorage!==undefined) ? localStorage.getItem(localStorageName('_session')) : undefined;
+			if(session){
+				var sessionObject = JSON.parse(session);
+				if(sessionObject.key){
+					return sessionObject.key;
+				}
+			}
+		}catch(e){
+			return false;
+    }
+    return false;
+}
+
+function getTotalAndQtyFromLocalStorage(localSessionKey){
+
+    try {
+			var cart = localStorage.getItem(localStorageName(localSessionKey + 'CartData'));
+			if(cart){
+				var cartObject = JSON.parse(cart);
+				return {
+					total: cartObject.total,
+					qty: cartObject.qty
+				};
+			}
+    }catch(e){
+			return false;
+    }
+    return false;
+}
+
+/* There are other events to watch for to trigger the callback. I'm using this to match accesso.js */
+function onDomReady( callback ){
+	document.addEventListener('DOMContentLoaded', function() {
+		callback.apply();
+	});
+}
+function getCartFromLocalStorage() {
+	try {
+		var key = getLocalStorageSessionKey();
+		if (key) {
+			var qtyAndTotal = getTotalAndQtyFromLocalStorage(key);
+			if (qtyAndTotal) {
+				window.parent.postMessage(JSON.stringify({
+					data: qtyAndTotal,
+					messageType: 'accesso:cartUpdate'
+				}), '*');
+			}
+		}
+	} catch (e) {
+	}
+}
+onDomReady(getCartFromLocalStorage);
+    </script>
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1286.0" data-gr-ext-installed=""><script defer="" src="./v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;a4f20e9d6994470abff52468c7f053f3&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

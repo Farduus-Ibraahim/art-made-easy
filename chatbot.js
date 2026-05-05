@@ -430,7 +430,7 @@ Rules:
     if (conversationHistory.length === 0) {
       appendMessage(
         'bot',
-        'Hello! I\'m your Art Made Easy guide. Ask me anything about Baroque or Impressionism — no question is too basic.'
+        'Hello! I\'m your Art Made Easy guide. Ask me anything about Baroque or Impressionism, no question is too basic.'
       );
     }
   }
